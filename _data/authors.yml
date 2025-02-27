@@ -1,18 +1,12 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Giulia Bugatti:
+  name        : "Giulia Bugatti"
+  bio         : "Sou estudante de IA na FIAP e desenvolvedora na área de TI do Bradesco. Trabalho em projetos de IA e Ciência de Dados no GitHub, sempre explorando novas tecnologias e inovações! 🚀💡"
+  location    : "Sao Paulo"
+  employer    : "FIAP"
+  email       : "giuliabugatti02@gmail.com"
+  avatar      : "sua-foto.jpg"
+  github      : "https://github.com/giuliabugatti09"
+  linkedin    : "https://www.linkedin.com/in/giulia-bugatti-fonseca-226955267/"
