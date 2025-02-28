@@ -9,6 +9,8 @@
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
+}
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +18,11 @@
   overflow-y: auto;
 }
 
+.author__bio {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
   @include clearfix();
   margin-bottom: 1em;
 
@@ -150,12 +157,7 @@
   }
 }
 
-.author__bio {
-  margin: 0;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
+
 
   @include breakpoint($large) {
     margin-top: 10px;
