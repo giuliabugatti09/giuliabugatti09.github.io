@@ -11,19 +11,18 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Giulia Bugatti Fonseca"
 title_separator          : "-"
-name                     : &name "Giulia"
 description              : &description "Sou estudante de IA na 42 | FIAP e desenvolvedora na área de TI do Bradesco. Trabalho em projetos de IA e Ciência de Dados no GitHub, sempre explorando novas tecnologias e inovações! 🚀💡"
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://giuliabugatti09.github.io/"
-
+repository               : "giuliabugatti09/giuliabugatti09.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 author:
   avatar: "sua-foto.jpg"
-  name: "Giulia Bugatti"
   pronouns: # example: "she/her" 
-  bio: "Sou estudante de IA na FIAP e desenvolvedora na área de TI do Bradesco. Trabalho em projetos de IA e Ciência de Dados no GitHub, sempre explorando novas tecnologias e inovações! 🚀💡"
+  bio: "Sou estudante de IA na FIAP e desenvolvedora na área de TI do Bradesco."
+  "Trabalho em projetos de IA e Ciência de Dados no GitHub," 
+  "sempre explorando novas tecnologias e inovações! 🚀💡"
   location: "Sao Paulo"
   employer: "FIAP"
   uri: # URL
