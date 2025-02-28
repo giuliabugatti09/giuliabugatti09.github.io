@@ -20,9 +20,9 @@ repository               : "giuliabugatti09/giuliabugatti09.github.io"
 author:
   avatar: "sua-foto.jpg"
   pronouns: # example: "she/her" 
-  bio: "Sou estudante de IA na FIAP e desenvolvedora na área de TI do Bradesco."
-  "Trabalho em projetos de IA e Ciência de Dados no GitHub," 
-  "sempre explorando novas tecnologias e inovações! 🚀💡"
+  bio: >
+    Sou estudante de IA na FIAP e desenvolvedora na área de TI do Bradesco.
+    Trabalho em projetos de IA e Ciência de Dados no GitHub, sempre explorando novas tecnologias e inovações! 🚀💡
   location: "Sao Paulo"
   employer: "FIAP"
   uri: # URL
