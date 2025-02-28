@@ -5,7 +5,6 @@
 /*
    Default
    ========================================================================== */
-
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
@@ -14,12 +13,22 @@
   left: 0;
   height: 100%;
   overflow-y: auto;
+  width: 300px; // Ajuste a largura para 300px
+  background-color: #f8f9fa; // Fundo cinza claro
+  z-index: 1000; // Certifique-se de que a sidebar está acima de outros elementos
+  padding: 20px; // Adicione padding para espaçamento interno
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1); // Sombra leve para destacar a sidebar
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; // Ajuste a tipografia
+  font-size: 16px; // Ajuste o tamanho da fonte
+  line-height: 1.5; // Ajuste a altura da linha
+  color: #333; // Cor do texto
+
   @include clearfix();
   margin-bottom: 1em;
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    overflow-y: auto; // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
   }
@@ -42,16 +51,16 @@
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   h3, h4 {
-    font-size: $type-size-5;
+    font-size: 18px;
   }
 
   p, li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -133,9 +142,10 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
 .sidebar .author__desktop {
@@ -158,7 +168,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   z-index: 10;
   position: relative;
   cursor: pointer;
@@ -251,7 +261,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: 16px;
     text-decoration: none;
 
     &:hover {
