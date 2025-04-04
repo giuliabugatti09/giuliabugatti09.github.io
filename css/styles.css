@@ -356,7 +356,6 @@ header .nav-links li a:hover::after {
 /* Seção Habilidades */
 #habilidades {
     padding: 7rem 0;
-    background-color: #111;
     position: relative; /* Adiciona position relative */
     z-index: 2;
 }
@@ -471,7 +470,6 @@ header .nav-links li a:hover::after {
 }
 
 .project-card {
-    background-color: #111;
     border-radius: 0.5rem;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -557,7 +555,6 @@ header .nav-links li a:hover::after {
 /* Seção Contato */
 #contato {
     padding: 7rem 0;
-    background-color: #111;
     text-align: center;
     position: relative; /* Adiciona position relative */
     z-index: 2;
