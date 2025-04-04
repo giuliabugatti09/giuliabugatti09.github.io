@@ -56,339 +56,236 @@
                 </div>
             </div>
         </section>
-
         <section id="habilidades" class="skills">
             <h2 class="section-title">Minhas <span>Habilidades</span></h2>
-           <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Habilidades</title>
-    <style>
-        /* Estilos gerais */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        
-        h2, h3 {
-            color: #2c3e50;
-        }
-        
-        /* Container de habilidades */
-        .skills-container {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        
-        .skill-category {
-            flex: 1;
-            min-width: 250px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .skill-item {
-            margin-bottom: 15px;
-        }
-        
-        .skill-item span {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-        }
-        
-        /* Barras de habilidades */
-        .skill-bar {
-            width: 100%;
-            height: 20px;
-            background-color: #e0e0e0;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        
-        .skill-level, .skill-fill {
-            height: 100%;
-            border-radius: 10px;
-            transition: width 0.8s ease-in-out;
-        }
-        
-        /* Cores baseadas no nível */
-        .skill-level[data-level="95"],
-        .skill-fill[style*="95%"] { 
-            width: 95%; 
-            background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%); 
-        }
-        
-        .skill-level[data-level="90"],
-        .skill-fill[style*="90%"] { 
-            width: 90%; 
-            background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%); 
-        }
-        
-        .skill-level[data-level="85"],
-        .skill-fill[style*="85%"] { 
-            width: 85%; 
-            background: linear-gradient(90deg, #2196F3 0%, #03A9F4 100%); 
-        }
-        
-        .skill-level[data-level="80"],
-        .skill-fill[style*="80%"] { 
-            width: 80%; 
-            background: linear-gradient(90deg, #2196F3 0%, #03A9F4 100%); 
-        }
-        
-        .skill-level[data-level="75"],
-        .skill-fill[style*="75%"] { 
-            width: 75%; 
-            background: linear-gradient(90deg, #FFC107 0%, #FFEB3B 100%); 
-        }
-        
-        .skill-level[data-level="70"],
-        .skill-fill[style*="70%"] { 
-            width: 70%; 
-            background: linear-gradient(90deg, #FFC107 0%, #FFEB3B 100%); 
-        }
-        
-        .skill-level[data-level="65"],
-        .skill-fill[style*="65%"] { 
-            width: 65%; 
-            background: linear-gradient(90deg, #FF9800 0%, #FFC107 100%); 
-        }
-        
-        .skill-level[data-level="60"],
-        .skill-fill[style*="60%"] { 
-            width: 60%; 
-            background: linear-gradient(90deg, #FF9800 0%, #FFC107 100%); 
-        }
-        
-        /* Carrossel */
-        .carousel-container {
-            max-width: 800px;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .carousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        
-        .slide {
-            min-width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        
-        .skill {
-            margin-bottom: 15px;
-        }
-        
-        .skill p {
-            margin: 0 0 5px 0;
-            font-weight: 500;
-        }
-        
-        /* Botões do carrossel */
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            z-index: 10;
-        }
-        
-        #prevBtn {
-            left: 10px;
-        }
-        
-        #nextBtn {
-            right: 10px;
-        }
-        
-        .carousel-btn:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-    </style>
-</head>
-<body>
-    <section>
-        <h2>Minhas Habilidades</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-item">
-                    <span>HTML5</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="95"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>CSS3</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>JavaScript</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>React</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="80"></div>
-                    </div>
-                </div>
-            </div>
+            <style>
+                /* Estilos específicos para a seção de habilidades */
+                .skills {
+                    padding: 40px 0;
+                }
+                
+                .section-title {
+                    text-align: center;
+                    font-size: 2.5rem;
+                    margin-bottom: 40px;
+                    color: #333;
+                }
+                
+                .section-title span {
+                    color: #4CAF50;
+                }
+                
+                .skills-container {
+                    display: flex;
+                    gap: 30px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-bottom: 40px;
+                }
+                
+                .skill-category {
+                    flex: 1;
+                    min-width: 250px;
+                    max-width: 350px;
+                    background: white;
+                    padding: 25px;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+                
+                .skill-category:hover {
+                    transform: translateY(-5px);
+                }
+                
+                .skill-category h3 {
+                    color: #2c3e50;
+                    margin-bottom: 20px;
+                    font-size: 1.5rem;
+                    border-bottom: 2px solid #4CAF50;
+                    padding-bottom: 8px;
+                }
+                
+                .skill-item {
+                    margin-bottom: 20px;
+                }
+                
+                .skill-item span {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 8px;
+                    font-weight: 500;
+                    color: #444;
+                }
+                
+                .skill-item span::after {
+                    content: attr(data-percent);
+                    color: #4CAF50;
+                    font-weight: bold;
+                }
+                
+                .skill-bar {
+                    width: 100%;
+                    height: 12px;
+                    background-color: #e0e0e0;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    position: relative;
+                }
+                
+                .skill-level {
+                    height: 100%;
+                    border-radius: 6px;
+                    position: relative;
+                    width: 0;
+                    transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+                }
+                
+                /* Cores baseadas no nível - Gradiente consistente */
+                .skill-level[data-level="95"] { 
+                    background: linear-gradient(90deg, #4CAF50, #8BC34A); 
+                }
+                
+                .skill-level[data-level="90"] { 
+                    background: linear-gradient(90deg, #4CAF50, #8BC34A); 
+                }
+                
+                .skill-level[data-level="85"] { 
+                    background: linear-gradient(90deg, #2196F3, #03A9F4); 
+                }
+                
+                .skill-level[data-level="80"] { 
+                    background: linear-gradient(90deg, #2196F3, #03A9F4); 
+                }
+                
+                .skill-level[data-level="75"] { 
+                    background: linear-gradient(90deg, #FFC107, #FFEB3B); 
+                }
+                
+                .skill-level[data-level="70"] { 
+                    background: linear-gradient(90deg, #FFC107, #FFEB3B); 
+                }
+                
+                .skill-level[data-level="65"] { 
+                    background: linear-gradient(90deg, #FF9800, #FFC107); 
+                }
+                
+                .skill-level[data-level="60"] { 
+                    background: linear-gradient(90deg, #FF9800, #FFC107); 
+                }
+                
+                /* Efeito de brilho nas barras */
+                .skill-level::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(
+                        to right,
+                        rgba(255, 255, 255, 0.8) 0%,
+                        rgba(255, 255, 255, 0) 50%,
+                        rgba(255, 255, 255, 0.8) 100%
+                    );
+                    opacity: 0.3;
+                    animation: shine 2s infinite;
+                }
+                
+                @keyframes shine {
+                    0% { transform: translateX(-100%); }
+                    100% { transform: translateX(100%); }
+                }
+            </style>
             
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <div class="skill-item">
-                    <span>Node.js</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="75"></div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span data-percent="95%">HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="90%">CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="85%">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="80%">React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <span>Python</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="70"></div>
+                
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <span data-percent="75%">Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="70%">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="65%">PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="65"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <span>PHP</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="65"></div>
+                
+                <div class="skill-category">
+                    <h3>Ferramentas</h3>
+                    <div class="skill-item">
+                        <span data-percent="85%">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="75%">Figma</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span data-percent="60%">Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="60"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="skill-category">
-                <h3>Ferramentas</h3>
-                <div class="skill-item">
-                    <span>Git</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Figma</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="75"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Docker</span>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="60"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="carousel-container">
-        <button class="carousel-btn" id="prevBtn">❮</button>
-        <button class="carousel-btn" id="nextBtn">❯</button>
-        <div class="carousel">
-            <div class="slide">
-                <div class="skill"><p>Python</p><div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
-                <div class="skill"><p>JavaScript</p><div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div></div>
-                <div class="skill"><p>SQL</p><div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
-                <div class="skill"><p>Machine Learning</p><div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div></div>
-                <div class="skill"><p>Power BI</p><div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
-            </div>
-            <div class="slide">
-                <div class="skill"><p>React</p><div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div></div>
-                <div class="skill"><p>C++</p><div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div></div>
-                <div class="skill"><p>Data Analysis</p><div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div></div>
-                <div class="skill"><p>Cloud Computing</p><div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div></div>
-                <div class="skill"><p>AI Development</p><div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
-            </div>
-            <div class="slide">
-                <div class="skill"><p>HTML</p><div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div></div>
-                <div class="skill"><p>CSS</p><div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div></div>
-                <div class="skill"><p>Docker</p><div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div></div>
-                <div class="skill"><p>Kubernetes</p><div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div></div>
-                <div class="skill"><p>Linux</p><div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div></div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Animação das barras de habilidade
-        document.addEventListener('DOMContentLoaded', function() {
-            // Animar barras na seção principal
-            const skillLevels = document.querySelectorAll('.skill-level');
-            
-            skillLevels.forEach(level => {
-                const width = level.getAttribute('data-level');
-                level.style.width = '0';
-                setTimeout(() => {
-                    level.style.width = width + '%';
-                }, 100);
-            });
-            
-            // Animar barras no carrossel
-            const skillFills = document.querySelectorAll('.skill-fill');
-            
-            skillFills.forEach(fill => {
-                const width = fill.style.width;
-                fill.style.width = '0';
-                setTimeout(() => {
-                    fill.style.width = width;
-                }, 100);
-            });
-            
-            // Carrossel
-            let currentSlide = 0;
-            const slides = document.querySelectorAll('.slide');
-            const totalSlides = slides.length;
-            const carousel = document.querySelector('.carousel');
-            
-            function updateCarousel() {
-                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-            }
-            
-            document.getElementById('nextBtn').addEventListener('click', () => {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateCarousel();
-            });
-            
-            document.getElementById('prevBtn').addEventListener('click', () => {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            });
-            
-            // Iniciar carrossel automático (opcional)
-            setInterval(() => {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateCarousel();
-            }, 5000);
-        });
-    </script>
-</body>
-</html>
+            <script>
+                // Animação das barras de habilidade
+                document.addEventListener('DOMContentLoaded', function() {
+                    const skillLevels = document.querySelectorAll('.skill-level');
+                    
+                    skillLevels.forEach(level => {
+                        const width = level.getAttribute('data-level');
+                        setTimeout(() => {
+                            level.style.width = width + '%';
+                        }, 100);
+                    });
+                });
+            </script>
+        </section>
         <section id="projetos" class="projects">
             <h2 class="section-title">Meus <span>Projetos</span></h2>
             <div class="projects-container">
