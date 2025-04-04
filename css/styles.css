@@ -255,9 +255,11 @@ header .nav-links li a:hover::after {
 /* Seção Sobre */
 #sobre {
     padding: 7rem 0;
+    background-color: rgba(17, 17, 17, 0.8);
     text-align: center;
     position: relative; /* Adiciona position relative */
     z-index: 2;
+    opacity: 0;
 }
 
 .section-title {
@@ -357,6 +359,8 @@ header .nav-links li a:hover::after {
     padding: 7rem 0;
     position: relative; /* Adiciona position relative */
     z-index: 2;
+    opacity: 0;
+    background-color: rgba(17, 17, 17, 0.8);
 }
 
 .skills-container {
@@ -458,6 +462,8 @@ header .nav-links li a:hover::after {
     background-color: #1a1a1a;
     position: relative; /* Adiciona position relative */
     z-index: 2;
+    opacity: 0;
+    background-color: rgba(17, 17, 17, 0.8)
 }
 
 .projects-container {
@@ -557,6 +563,8 @@ header .nav-links li a:hover::after {
     text-align: center;
     position: relative; /* Adiciona position relative */
     z-index: 2;
+    opacity: 0;
+    background-color: rgba(17, 17, 17, 0.8)
 }
 
 .contact-container {
