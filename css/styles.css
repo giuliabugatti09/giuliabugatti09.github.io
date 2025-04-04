@@ -256,7 +256,6 @@ header .nav-links li a:hover::after {
 #sobre {
     padding: 7rem 0;
     text-align: center;
-    background-color: #1a1a1a;
     position: relative; /* Adiciona position relative */
     z-index: 2;
 }
