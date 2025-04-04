@@ -1,49 +1,5 @@
 /* Estilos Globais */
-/* ===== AJUSTES ESPECÍFICOS SOLICITADOS ===== */
-#habilidades {
-    background-color: rgba(0, 0, 0, 0.98); /* Opacidade aumentada */
-}
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
-    gap: 30px;
-}
-
-.skill-category {
-    background: #000; /* Preto puro */
-    border: 1px solid #333;
-    padding: 30px;
-}
-
-.skill-category h3 {
-    color: #fff !important; /* Título branco */
-    text-align: left; /* Alinhamento ajustado */
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #00ffff;
-}
-
-.skill-category h3::after {
-    display: none; /* Remove a linha decorativa */
-}
-
-.skill-item span {
-    color: #eee !important;
-}
-
-/* Mantém todas as animações e efeitos hover originais */
-.skill-level {
-    background: #00ffff !important; /* Mantém o ciano das barras */
-    transition: width 1s ease !important;
-}
-
-/* Responsividade - Quebra para 1 coluna em mobile */
-@media (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
