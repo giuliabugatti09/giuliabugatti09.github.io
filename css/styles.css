@@ -77,6 +77,87 @@ header .nav-links {
 header .nav-links li {
     margin-left: 2rem;
 }
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #eee;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Seção Hero (única com transparência) */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 7rem 0;
+    text-align: center;
+    background: rgba(17, 17, 17, 0.8) url('hero-bg.jpg') no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* Todas as outras sections sem transparência */
+#sobre {
+    padding: 7rem 0;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+#habilidades {
+    padding: 7rem 0;
+    background-color: #111;
+}
+
+#projetos {
+    padding: 7rem 0;
+    background-color: #1a1a1a;
+}
+
+#contato {
+    padding: 7rem 0;
+    background-color: #111;
+    text-align: center;
+}
+
+/* ... (mantenha todo o restante do seu CSS original exatamente como está) ... */
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+/* Media Queries (mantenha todos os existentes) */
+@media (max-width: 768px) {
+    /* ... */
+}
 
 header .nav-links li a {
     text-decoration: none;
@@ -344,10 +425,6 @@ header .nav-links li a:hover::after {
 }
 
 /* Seção Habilidades */
-#habilidades {
-    padding: 7rem 0;
-    background-color: #111;
-}
 
 .skills-container {
     display: flex;
