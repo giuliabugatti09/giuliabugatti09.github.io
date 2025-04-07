@@ -1,83 +1,4 @@
 /* Estilos Globais */
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111; /* Fundo escuro para combinar com o efeito Matrix */
-    color: #eee; /* Texto claro para contraste */
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-.content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Cabeçalho */
-header {
-    position: fixed; /* Fixa o cabeçalho no topo */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(17, 17, 17, 0.95); /* Fundo do cabeçalho levemente transparente */
-    padding: 1rem 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar o cabeçalho */
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-}
-
-header .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: transform 0.2s ease, color 0.3s ease; /* Transição suave na transformação e cor */
-}
-
-header .logo:hover {
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
-    color: #00ffff; /* Altera a cor para ciano ao passar o mouse */
-}
-
-header .logo span {
-    color: #00ffff; /* Ciano para a segunda parte do logo */
-}
-
-.menu-toggle {
-    display: none; /* Esconde o menu hambúrguer em telas grandes */
-    font-size: 1.8rem;
-    color: #fff;
-    cursor: pointer;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.menu-toggle:hover {
-    color: #00ffff;
-}
-
-header .nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header .nav-links li {
-    margin-left: 2rem;
-}
-/* Estilos Globais */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -107,6 +28,90 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.05);
+    color: #4CAF50f;
+}
+
+header .logo span {
+    color: #4CAF50;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #4CAF50;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    margin-left: 2rem;
+}
+
+header .nav-links li a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    padding: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+header .nav-links li a:hover,
+header .nav-links li a.active {
+    color: #4CAF50;
+}
+
+header .nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+header .nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
 /* Seção Hero (única com transparência) */
 #home {
     display: flex;
@@ -121,95 +126,6 @@ header {
     z-index: 1;
 }
 
-/* Todas as outras sections sem transparência */
-#sobre {
-    padding: 7rem 0;
-    text-align: center;
-    background-color: #1a1a1a;
-}
-
-#habilidades {
-    padding: 7rem 0;
-    background-color: #111;
-}
-
-#projetos {
-    padding: 7rem 0;
-    background-color: #1a1a1a;
-}
-
-#contato {
-    padding: 7rem 0;
-    background-color: #111;
-    text-align: center;
-}
-
-/* ... (mantenha todo o restante do seu CSS original exatamente como está) ... */
-
-/* Rodapé */
-footer {
-    background-color: #111;
-    padding: 3rem 0;
-    text-align: center;
-    border-top: 1px solid #222;
-}
-
-/* Media Queries (mantenha todos os existentes) */
-@media (max-width: 768px) {
-    /* ... */
-}
-
-header .nav-links li a {
-    text-decoration: none;
-    color: #eee;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
-    padding: 0.5rem;
-    transition: color 0.3s ease, transform 0.3s ease; /* Transição para cor e transformação */
-    display: inline-block; /* Importante para a animação de sublinhado */
-    position: relative;
-}
-
-header .nav-links li a:hover,
-header .nav-links li a.active {
-    color: #00ffff; /* Altera a cor para ciano no hover e no link ativo */
-}
-
-header .nav-links li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #00ffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: left;
-}
-
-header .nav-links li a:hover::after {
-    transform: scaleX(1);
-}
-
-
-/* Seção Hero */
-#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Altura da viewport para ocupar a tela inteira */
-    padding: 7rem 0;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    position: relative; /* Para posicionar o conteúdo sobre o canvas */
-    z-index: 1;
-}
-
 #home::before {
     content: '';
     position: absolute;
@@ -217,16 +133,15 @@ header .nav-links li a:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 17, 17, 0.8); /* Camada semi-transparente */
+    background-color: rgba(17, 17, 17, 0.8);
     z-index: -1;
 }
-
 
 .hero-content {
     max-width: 800px;
     margin-bottom: 2rem;
     opacity: 0;
-    animation: fadeIn 1s ease forwards 0.5s, slideInDown 1s ease forwards; /* Animações de entrada */
+    animation: fadeIn 1s ease forwards 0.5s, slideInDown 1s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -239,7 +154,6 @@ header .nav-links li a:hover::after {
     to { transform: translateY(0); }
 }
 
-
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: bold;
@@ -250,7 +164,7 @@ header .nav-links li a:hover::after {
 }
 
 .hero-content h1 span {
-    color: #00ffff;
+    color: #4CAF50f;
 }
 
 .hero-content h2 {
@@ -298,15 +212,14 @@ header .nav-links li a:hover::after {
 
 .btn-outline {
     background-color: transparent;
-    border: 2px solid #00ffff;
+    border: 2px solid #4CAF50;
 }
 
 .btn-outline:hover {
     background-color: rgba(0, 255, 255, 0.1);
-    border-color: #00ffff;
+    border-color: #4CAF50;
     transform: translateY(-2px);
 }
-
 
 .hero-image {
     max-width: 350px;
@@ -318,10 +231,9 @@ header .nav-links li a:hover::after {
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(100px); }
-  to { transform: translateX(0); }
+    from { transform: translateX(100px); }
+    to { transform: translateX(0); }
 }
-
 
 /* Seção Sobre */
 #sobre {
@@ -349,10 +261,9 @@ header .nav-links li a:hover::after {
     left: 50%;
     width: 4rem;
     height: 0.25rem;
-    background-color: #00ffff;
+    background-color: #4CAF50;
     transform: translateX(-50%);
 }
-
 
 .about-content {
     display: flex;
@@ -374,9 +285,8 @@ header .nav-links li a:hover::after {
 }
 
 .about-image:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
-
 
 .about-image img {
     width: 100%;
@@ -416,7 +326,7 @@ header .nav-links li a:hover::after {
 
 .about-info .info-item span {
     font-weight: bold;
-    color: #00ffff;
+    color: #4CAF50f;
     min-width: 120px;
 }
 
@@ -425,6 +335,10 @@ header .nav-links li a:hover::after {
 }
 
 /* Seção Habilidades */
+#habilidades {
+    padding: 7rem 0;
+    background-color: #111;
+}
 
 .skills-container {
     display: flex;
@@ -457,10 +371,9 @@ header .nav-links li a:hover::after {
     left: 50%;
     width: 3rem;
     height: 0.2rem;
-    background-color: #00ffff;
+    background-color: #4CAF50f;
     transform: translateX(-50%);
 }
-
 
 .skill-item {
     margin-bottom: 1.5rem;
@@ -484,7 +397,7 @@ header .nav-links li a:hover::after {
 }
 
 .skill-level {
-    background-color: #00ffff;
+    background-color: #4CAF50;
     height: 100%;
     border-radius: 0.5rem;
     width: 0;
@@ -501,16 +414,29 @@ header .nav-links li a:hover::after {
     height: 100%;
     background: linear-gradient(
         45deg,
-        rgba(255, 255, 255, 0.2) 25%,
+        rgba(76, 175, 80, 0.2) 25%, /* Verde escuro ajustado */
         transparent 25%,
         transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
+        rgba(76, 175, 80, 0.2) 50%, /* Verde escuro ajustado */
+        rgba(76, 175, 80, 0.2) 75%, /* Verde escuro ajustado */
         transparent 75%,
         transparent
+);
+
     );
     background-size: 1rem 1rem;
     animation: move 1s linear infinite;
+}
+.skill-level::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.3;
+    animation: shine 2s infinite;
 }
 
 @keyframes move {
@@ -518,13 +444,11 @@ header .nav-links li a:hover::after {
     100% { background-position: 1rem 0; }
 }
 
-
 /* Seção Projetos */
 #projetos {
     padding: 7rem 0;
     background-color: #1a1a1a;
 }
-
 
 .projects-container {
     display: grid;
@@ -618,14 +542,12 @@ header .nav-links li a:hover::after {
     margin-right: 0.5rem;
 }
 
-
 /* Seção Contato */
 #contato {
     padding: 7rem 0;
     background-color: #111;
     text-align: center;
 }
-
 
 .contact-container {
     display: flex;
@@ -670,7 +592,7 @@ header .nav-links li a:hover::after {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 .contact-item span {
@@ -701,10 +623,9 @@ header .nav-links li a:hover::after {
 }
 
 .social-links a:hover {
-    background-color: #00ffff;
+    background-color: #4CAF50;
     transform: translateY(-2px) scale(1.1);
 }
-
 
 .contact-form {
     flex: 1;
@@ -729,7 +650,6 @@ header .nav-links li a:hover::after {
     letter-spacing: 0.05em;
 }
 
-
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -745,7 +665,7 @@ header .nav-links li a:hover::after {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #00ffff;
+    border-color: #4CAF50f;
 }
 
 .contact-form textarea {
@@ -756,7 +676,6 @@ header .nav-links li a:hover::after {
 .contact-form button {
     width: 100%;
 }
-
 
 /* Rodapé */
 footer {
@@ -782,7 +701,7 @@ footer {
 }
 
 .footer-logo span {
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 footer p {
@@ -790,7 +709,6 @@ footer p {
     color: #aaa;
     letter-spacing: 0.05em;
 }
-
 
 /* Estilos para o Efeito Matrix */
 #matrixCanvas {
@@ -800,9 +718,8 @@ footer p {
     width: 100%;
     height: 100%;
     z-index: 0;
-    pointer-events: none; /* Evita que o canvas interfira nos cliques */
+    pointer-events: none;
 }
-
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
@@ -824,7 +741,7 @@ footer p {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: rgba(17, 17, 17, 0.95);
+        background-color: #111;
         margin-top: 1rem;
         border-radius: 0.3rem;
         overflow: hidden;
@@ -833,7 +750,6 @@ footer p {
     header .nav-links.active {
         display: block;
     }
-
 
     header .nav-links li {
         margin: 0;
@@ -849,7 +765,6 @@ footer p {
         padding: 0.5rem;
         display: block;
     }
-
 
     .hero-content {
         text-align: center;
@@ -898,8 +813,6 @@ footer p {
     }
 }
 
-
-/* Pequenas alterações para telas menores (smartphones) */
 @media (max-width: 480px) {
     #home {
         padding-top: 10rem;
@@ -936,7 +849,7 @@ footer p {
         min-width: auto;
     }
 
-    .contact-form{
+    .contact-form {
         padding: 1.5rem;
     }
 
@@ -949,6 +862,4 @@ footer p {
     .contact-item i {
         font-size: 1.2rem;
     }
-}
-
 }
