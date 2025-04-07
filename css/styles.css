@@ -140,12 +140,12 @@ header .nav-links li a:hover::after {
 .hero-content {
     max-width: 800px;
     margin-bottom: 2rem;
-    opacity: 0;
+    opacity: 60;
     animation: fadeIn 1s ease forwards 0.5s, slideInDown 1s ease forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
+    from { opacity: 60; }
     to { opacity: 1; }
 }
 
@@ -226,7 +226,7 @@ header .nav-links li a:hover::after {
     margin-top: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-    opacity: 0;
+    opacity: 60;
     animation: fadeIn 1s ease forwards 1s, slideInRight 1s ease forwards;
 }
 
