@@ -58,11 +58,11 @@ header .logo {
 
 header .logo:hover {
     transform: scale(1.05);
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 header .logo span {
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 .menu-toggle {
@@ -75,7 +75,7 @@ header .logo span {
 }
 
 .menu-toggle:hover {
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 header .nav-links {
@@ -104,7 +104,7 @@ header .nav-links li a {
 
 header .nav-links li a:hover,
 header .nav-links li a.active {
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 header .nav-links li a::after {
@@ -114,7 +114,7 @@ header .nav-links li a::after {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #00ffff;
+    background-color: #4CAF50;
     transform: scaleX(0);
     transition: transform 0.3s ease;
     transform-origin: left;
@@ -176,7 +176,7 @@ header .nav-links li a:hover::after {
 }
 
 .hero-content h1 span {
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 .hero-content h2 {
@@ -224,12 +224,12 @@ header .nav-links li a:hover::after {
 
 .btn-outline {
     background-color: transparent;
-    border: 2px solid #00ffff;
+    border: 2px solid #4CAF50;
 }
 
 .btn-outline:hover {
     background-color: rgba(0, 255, 255, 0.1);
-    border-color: #00ffff;
+    border-color: #4CAF50;
     transform: translateY(-2px);
 }
 
@@ -280,7 +280,7 @@ header .nav-links li a:hover::after {
     left: 50%;
     width: 4rem;
     height: 0.25rem;
-    background-color: #00ffff;
+    background-color: #4CAF50;
     transform: translateX(-50%);
 }
 
@@ -345,7 +345,7 @@ header .nav-links li a:hover::after {
 
 .about-info .info-item span {
     font-weight: bold;
-    color: #00ffff;
+    color: #4CAF50;
     min-width: 120px;
 }
 
@@ -389,7 +389,7 @@ header .nav-links li a:hover::after {
     left: 50%;
     width: 3rem;
     height: 0.2rem;
-    background-color: #00ffff;
+    background-color: #4CAF50;
     transform: translateX(-50%);
 }
 
@@ -415,7 +415,7 @@ header .nav-links li a:hover::after {
 }
 
 .skill-level {
-    background-color: #00ffff;
+    background-color: #4CAF50;
     height: 100%;
     border-radius: 0.5rem;
     width: 0;
@@ -596,7 +596,7 @@ header .nav-links li a:hover::after {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 .contact-item span {
@@ -627,7 +627,7 @@ header .nav-links li a:hover::after {
 }
 
 .social-links a:hover {
-    background-color: #00ffff;
+    background-color: #4CAF50;
     transform: translateY(-2px) scale(1.1);
 }
 
@@ -669,7 +669,7 @@ header .nav-links li a:hover::after {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #00ffff;
+    border-color: #4CAF50;
 }
 
 .contact-form textarea {
@@ -705,7 +705,7 @@ footer {
 }
 
 .footer-logo span {
-    color: #00ffff;
+    color: #4CAF50;
 }
 
 footer p {
