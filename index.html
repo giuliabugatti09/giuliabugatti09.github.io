@@ -53,96 +53,107 @@
             </div>
         </section>
         <section id="habilidades" class="skills">
-            <h2 class="section-title">Minhas <span>Habilidades</span></h2>
-            
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-item">
-                        <span data-percent="95%">HTML5</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="95"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="90%">CSS3</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="85%">JavaScript</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="80%">React</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="80"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-item">
-                        <span data-percent="75%">Node.js</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="70%">Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="70"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="65%">PHP</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="65"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Ferramentas</h3>
-                    <div class="skill-item">
-                        <span data-percent="85%">Git</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="75%">Figma</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span data-percent="60%">Docker</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="60"></div>
-                        </div>
-                    </div>
-                </div>
+    <h2 class="section-title">Minhas <span>Habilidades</span></h2>
+
+    <div class="skills-wrapper">
+        <div class="skills-pages">
+            <!-- Página 1 -->
+            <div class="skills-page">
+                <div class="skill-item"><span>HTML5</span><div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div></div>
+                <div class="skill-item"><span>CSS3</span><div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></div>
+                <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
+                <div class="skill-item"><span>React</span><div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></div>
+                <div class="skill-item"><span>Node.js</span><div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></div>
             </div>
-            
-            <script>
-                // Animação das barras de habilidade
-                document.addEventListener('DOMContentLoaded', function() {
-                    const skillLevels = document.querySelectorAll('.skill-level');
-                    
-                    skillLevels.forEach(level => {
-                        const width = level.getAttribute('data-level');
-                        setTimeout(() => {
-                            level.style.width = width + '%';
-                        }, 100);
-                    });
-                });
-            </script>
-        </section>
+
+            <!-- Página 2 -->
+            <div class="skills-page hidden">
+                <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div></div>
+                <div class="skill-item"><span>PHP</span><div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div></div>
+                <div class="skill-item"><span>Git</span><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></div>
+                <div class="skill-item"><span>Figma</span><div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></div>
+                <div class="skill-item"><span>Docker</span><div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div></div>
+            </div>
+        </div>
+
+        <div class="skills-navigation">
+            <button class="nav-button" onclick="navigateSkills(-1)">&lt;</button>
+            <button class="nav-button" onclick="navigateSkills(1)">&gt;</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    .skills-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-pages {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .skills-page {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .skill-item span {
+        font-weight: bold;
+    }
+
+    .skill-bar {
+        background-color: #333;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 20px;
+        margin-top: 5px;
+    }
+
+    .skill-level {
+        height: 100%;
+        background: linear-gradient(to right, #00c853, #64dd17);
+        border-radius: 10px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .skills-navigation {
+        margin-top: 1rem;
+    }
+
+    .nav-button {
+        background-color: #111;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    .nav-button:hover {
+        background-color: #00c853;
+    }
+</style>
+
+<script>
+    let currentPage = 0;
+    const pages = document.querySelectorAll('.skills-page');
+
+    function navigateSkills(direction) {
+        pages[currentPage].classList.add('hidden');
+        currentPage = (currentPage + direction + pages.length) % pages.length;
+        pages[currentPage].classList.remove('hidden');
+    }
+</script>
        <section id="projetos" class="projects">
     <h2 class="section-title">Meus <span>Projetos</span></h2>
     <div class="projects-container">
