@@ -208,9 +208,9 @@ header .nav-links li a:hover::after {
     font-size: 1.1rem;
     font-weight: bold;
     color: #fff;
+    background-color: #4CAF50;
     text-decoration: none;
     border-radius: 0.3rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: none;
     cursor: pointer;
@@ -218,7 +218,7 @@ header .nav-links li a:hover::after {
 }
 
 .btn:hover {
-    background-color: #00b3b3;
+    background-color: #4CAF50;
     transform: translateY(-2px);
 }
 
@@ -251,7 +251,7 @@ header .nav-links li a:hover::after {
 #sobre, #habilidades, #projetos, #contato, footer {
     position: relative;
     z-index: 2;
-    background-color: white;
+    background-color: black;
 }
 
 /* Seção Sobre */
