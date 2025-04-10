@@ -251,7 +251,8 @@ header .nav-links li a:hover::after {
 #sobre, #habilidades, #projetos, #contato, footer {
     position: relative;
     z-index: 2;
-    background-color: black;
+    background-color: transparent;
+    opacity: 20%;
 }
 
 /* Seção Sobre */
